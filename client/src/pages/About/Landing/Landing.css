@@ -1,0 +1,108 @@
+/* HERO CONTAINER */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;            
+  max-width: 1200px;     
+  margin: 50px auto;        
+  padding: 4rem 6rem;    
+}
+
+/* LEFT SIDE (TEXT) */
+.fir {
+  flex: 1;               
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #222;           /* readable text color */
+}
+
+/* HEADLINE */
+.intro-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-family: "Gill Sans", "Gill Sans MT", sans-serif;
+  line-height: 1.2;
+}
+
+/* PARAGRAPH */
+.intro-text p {
+  margin-bottom: 1.7rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* TAGLINES */
+.tagline1 {
+  color: black;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.tagline2 {
+  color: red;
+  font-weight: bold;
+}
+
+/* BUTTONS */
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.red {
+  background-color: red;
+  margin-right: 10px;
+}
+
+.red:hover {
+  background-color: darkred;
+}
+
+.blue {
+  background-color: rgb(0, 183, 255);
+}
+
+.blue:hover {
+  background-color: rgb(0, 140, 200);
+}
+
+/* RIGHT SIDE (IMAGE/GRAPHIC) */
+.sec {
+  flex: 1;               
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg {
+  width: 80%;
+  height: auto;          
+  max-height: 100%;
+  border-radius: 10px;   /* optional */
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .fir, .sec {
+    width: 100%;
+  }
+
+  .intro-text h1 {
+    font-size: 2.2rem;
+  }
+}
